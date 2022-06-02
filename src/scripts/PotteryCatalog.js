@@ -8,6 +8,8 @@ export const toSellOrNotToSell = (potteryObj) => {
         potteryObj.price = 20
         toBeSold.push(potteryObj)
     }
+
+    return potteryObj
 }
 
 export const usePottery = () => {
