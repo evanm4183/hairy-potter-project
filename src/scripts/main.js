@@ -1,5 +1,6 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js"
+import { firePottery } from "./Kiln.js"
 
 
 // Make 5 pieces of pottery at the wheel
@@ -10,6 +11,10 @@ let pottery = [
     makePottery("Plate", 0.75, 0.5),
     makePottery("Cup", 1, 6)
 ]
+
+for (let pot of pottery) {
+    firePottery(pot, 2300)
+}
 
 console.log(pottery)
 
